@@ -1,2 +1,18 @@
 +1. Поставить JDK, настроить среду (environment).
-2. Написать программу в блокноте, которая выводит на экран фразу "Привет, Java!".
++2. Написать программу в блокноте, которая выводит на экран фразу "Привет, Java!".
++-3. Запустить программу из командной строки.
+	1) Переименовать HelloJava.txt в HelloJava.java с помощью Notepad++. (имя файла должно совпадать с именем класса)
+	2) Запустить командную строку. (запустить от имени администратора)
+	3) Перейти в директорию с нашим файлом. (cd C:\Users\USER\2017 July\GitHub\IT-Academy_Java_Core\IT-Academy_Java_Core\Lesson_01_Hello_World)
+	4) javac HelloJava.java (в директории появится файл HelloJava.class)
+	5) java HelloJava (вывелось: P?C?PёР?P?C?, Java!)
+	6) chcp 65001 (переключил на кодировку UTF-8 + шрифт Lucida Console)
+       -7) java HelloJava (вывелось: Привет, Java! Java!)
++-4. Создать jar-файл и выполнить его.
+	1) Создать файл manifest.mf:
+		Manifest-version: 1.0
+		Main-Class: HelloJava
+	2) jar cfm HelloJava.jar manifest.mf HelloJava.class
+       -3) java -jar HelloJava.jar (вывелось: Привет, Java! Java!)
++5. Используя java.util.Scanner написать программу, которая принимает на вход имя пользователя, и сразу же его выводит в виде "Привет, пользователь!".
+
